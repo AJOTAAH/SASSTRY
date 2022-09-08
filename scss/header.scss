@@ -1,17 +1,36 @@
-/* NESTING */
-header{
-    background-color: $bgPrimario;
-    div{
-        padding: 10px;
-        h3{
-            font-size: 20px;
+/* SCSS APLICADO AL HEADER */
+header {
+    background-image: linear-gradient(to bottom, #ffffff, #d1cdea, #a49ed5, #7470c0, #3c46aa);
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .sizeLogo {
+        width: 150px;
+        padding: 5px;
+        border-style: solid;
+        border-color: black;
+        margin-bottom: 10px;
+    }
+    .flexAni {
+        display: flex;
+        flex-direction: row;
+        .animacionLi {
+            transform: translateY(0px);
+            transition: all 1s;
+            &:hover {
+                transform: translateY(-5px);
+                color: black;
+            }
+            .editLiHeader {
+                list-style-type: none;
+                padding: 18px;
+                display: inline;
+                a {
+                    text-decoration: none;
+                }
+            }
         }
     }
     
-}
-a{
-    text-decoration: none;
-    &:hover{
-        color: $colorPrimario;
-    }
 }

@@ -1,20 +1,186 @@
-/* DECLARAR VARIABLES */
-/* $ColorVerde: green;
+/* SCSS APLICADO AL HEADER */
+header {
+  background-image: linear-gradient(to bottom, #ffffff, #d1cdea, #a49ed5, #7470c0, #3c46aa);
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  header .sizeLogo {
+    width: 150px;
+    padding: 5px;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 10px; }
+  header .flexAni {
+    display: flex;
+    flex-direction: row; }
+    header .flexAni .animacionLi {
+      transform: translateY(0px);
+      transition: all 1s; }
+      header .flexAni .animacionLi:hover {
+        transform: translateY(-5px);
+        color: black; }
+      header .flexAni .animacionLi .editLiHeader {
+        list-style-type: none;
+        padding: 18px;
+        display: inline; }
+        header .flexAni .animacionLi .editLiHeader a {
+          text-decoration: none; }
 
-/* USAR LA VARIABLE DECLARADA Y DEFINIDA */
-/* header{background-color: $ColorVerde;} */
-h3 {
+/* SCSS APLICADO AL FOOTER */
+footer {
+  background-image: linear-gradient(to bottom, #3c46aa, #7470c0, #a49ed5, #d1cdea, #ffffff);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  footer--p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white; }
+  footer .flexRedes {
+    display: flex;
+    flex-direction: column; }
+    footer .flexRedes .sizeTiktok {
+      width: 60px;
+      height: 60px;
+      border-style: solid;
+      margin: 5px; }
+    footer .flexRedes .sizeRRSS {
+      width: 60px;
+      border-style: solid;
+      display: flex;
+      flex-direction: column;
+      margin: 5px; }
+  footer .animacionLi {
+    transform: translateY(0px);
+    transition: all 1s; }
+    footer .animacionLi:hover {
+      transform: translateY(-5px);
+      color: black; }
+    footer .animacionLi .editLiFooter {
+      list-style-type: none;
+      padding: 12px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+/* GRID INDEX */
+.gridContainer {
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto; }
+
+header {
+  grid-area: header; }
+
+main {
+  grid-area: main; }
+
+footer {
+  grid-area: footer; }
+
+/* FIN GRID INDEX */
+/* GRID MAIN INDEX */
+.gridMainIndex {
+  display: grid;
+  gap: 8px;
+  grid-template-areas: "encabezado encabezado encebezado" "primerTxt primerTxt aside" "segundoTxt segundoTxt aside";
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: auto auto auto; }
+
+.encabezado {
+  grid-area: encabezado; }
+
+.primerTexto {
+  grid-area: primerTxt; }
+
+.segundoTexto {
+  grid-area: segundoTxt; }
+
+.asideGrid {
+  grid-area: aside; }
+
+/* FIN GRID MAIN INDEX */
+/* SCSS APLICADO AL MAIN*/
+.asideCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.p-30 {
+  padding: 30px; }
+
+.borderH {
+  border: solid; }
+
+.positionTxt {
+  position: relative;
+  left: 75px; }
+
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+header, footer {
+  margin-top: 40px; }
+
+.sizeImg {
+  width: 151%;
+  height: 480px; }
+
+.flexEquipo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+.flexStats {
+  display: flex;
+  flex-direction: column; }
+
+.colorTitulo {
   color: black; }
 
-/* NESTING */
-header {
-  background-color: yellow; }
-  header div {
-    padding: 10px; }
-    header div h3 {
-      font-size: 20px; }
+.sizeTable {
+  padding: 20px;
+  margin: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: solid; }
 
-a {
-  text-decoration: none; }
-  a:hover {
-    color: brown; }
+.bgMatch1 {
+  background-image: url(../assets/img/inferno.jpg);
+  height: 210px; }
+
+.bgMatch2 {
+  background-image: url(../assets/img/vertigo.jpg);
+  height: 210px; }
+
+.bgMatch3 {
+  background-image: url(../assets/img/mirage.jpg);
+  height: 210px; }
+
+.bgColor {
+  background-color: white; }
+
+.fontColorCloud {
+  color: lightblue; }
+
+.fontColorNVI {
+  color: yellow; }
+
+.fontColorLiquid {
+  color: blue; }
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 30px; }
+
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+main p {
+  line-height: 30px;
+  text-align: justify;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.bgImg {
+  background-image: url(../assets/img/dust2.jpg);
+  height: 450px; }
