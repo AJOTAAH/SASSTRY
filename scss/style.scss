@@ -1,38 +1,7 @@
-@import "header";
-@import "footer";
-
-/* GRID INDEX */
-.gridContainer {
-    display: grid;
-    gap: 20px;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto auto;
-}
-header{grid-area: header;}
-main{grid-area: main;}
-footer{grid-area: footer;}
-/* FIN GRID INDEX */
-
-/* GRID MAIN INDEX */
-.gridMainIndex{
-    display: grid;
-    gap: 8px;
-    grid-template-areas: 
-    "encabezado encabezado encebezado"
-    "primerTxt primerTxt aside"
-    "segundoTxt segundoTxt aside";
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: auto auto auto;
-}
-.encabezado{grid-area: encabezado;}
-.primerTexto{grid-area: primerTxt;}
-.segundoTexto{grid-area: segundoTxt;}
-.asideGrid{grid-area: aside;}
-/* FIN GRID MAIN INDEX */
+@import "_gridprincipal";
+@import "_header";
+@import "_gridmaindex";
+@import "_footer";
 
 /* SCSS APLICADO AL MAIN*/
 .asideCenter{display: flex;
@@ -61,7 +30,6 @@ header, footer{margin-top: 40px;}
     flex-direction: row;
     justify-content: space-evenly;
 }
-
 .flexStats {
     display: flex;
     flex-direction: column;
@@ -101,31 +69,25 @@ header, footer{margin-top: 40px;}
 .fontColorCloud {
     color: lightblue;
 }
-
 .fontColorNVI {
     color: yellow;
 }
-
 .fontColorLiquid {
     color: blue;
 }
-
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-size: 30px;
 }
-
 h3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 main p {
     line-height: 30px;
     text-align: justify;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 .bgImg {
     background-image: url(../assets/img/dust2.jpg);
     height: 450px;

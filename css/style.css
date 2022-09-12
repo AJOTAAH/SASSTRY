@@ -1,3 +1,21 @@
+/* GRID PRINCIPAL */
+.gridContainer {
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto; }
+
+header {
+  grid-area: header; }
+
+main {
+  grid-area: main; }
+
+footer {
+  grid-area: footer; }
+
+/* FIN GRID PRINCIPAL */
 /* SCSS APLICADO AL HEADER */
 header {
   background-image: linear-gradient(to bottom, #ffffff, #d1cdea, #a49ed5, #7470c0, #3c46aa);
@@ -27,6 +45,27 @@ header {
         header .flexAni .animacionLi .editLiHeader a {
           text-decoration: none; }
 
+/* GRID MAIN INDEX */
+.gridMainIndex {
+  display: grid;
+  gap: 8px;
+  grid-template-areas: "encabezado encabezado encebezado" "primerTxt primerTxt aside" "segundoTxt segundoTxt aside";
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: auto auto auto; }
+
+.encabezado {
+  grid-area: encabezado; }
+
+.primerTexto {
+  grid-area: primerTxt; }
+
+.segundoTexto {
+  grid-area: segundoTxt; }
+
+.asideGrid {
+  grid-area: aside; }
+
+/* FIN GRID MAIN INDEX */
 /* SCSS APLICADO AL FOOTER */
 footer {
   background-image: linear-gradient(to bottom, #3c46aa, #7470c0, #a49ed5, #d1cdea, #ffffff);
@@ -61,45 +100,6 @@ footer {
       padding: 12px;
       font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
-/* GRID INDEX */
-.gridContainer {
-  display: grid;
-  gap: 20px;
-  grid-template-areas: "header" "main" "footer";
-  grid-template-columns: 100%;
-  grid-template-rows: auto auto auto; }
-
-header {
-  grid-area: header; }
-
-main {
-  grid-area: main; }
-
-footer {
-  grid-area: footer; }
-
-/* FIN GRID INDEX */
-/* GRID MAIN INDEX */
-.gridMainIndex {
-  display: grid;
-  gap: 8px;
-  grid-template-areas: "encabezado encabezado encebezado" "primerTxt primerTxt aside" "segundoTxt segundoTxt aside";
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: auto auto auto; }
-
-.encabezado {
-  grid-area: encabezado; }
-
-.primerTexto {
-  grid-area: primerTxt; }
-
-.segundoTexto {
-  grid-area: segundoTxt; }
-
-.asideGrid {
-  grid-area: aside; }
-
-/* FIN GRID MAIN INDEX */
 /* SCSS APLICADO AL MAIN*/
 .asideCenter {
   display: flex;

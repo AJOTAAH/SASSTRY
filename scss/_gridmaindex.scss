@@ -1,0 +1,16 @@
+/* GRID MAIN INDEX */
+.gridMainIndex{
+    display: grid;
+    gap: 8px;
+    grid-template-areas: 
+    "encabezado encabezado encebezado"
+    "primerTxt primerTxt aside"
+    "segundoTxt segundoTxt aside";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto auto;
+}
+.encabezado{grid-area: encabezado;}
+.primerTexto{grid-area: primerTxt;}
+.segundoTexto{grid-area: segundoTxt;}
+.asideGrid{grid-area: aside;}
+/* FIN GRID MAIN INDEX */
