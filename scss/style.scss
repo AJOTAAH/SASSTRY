@@ -1,6 +1,7 @@
 @import "_gridprincipal";
 @import "_header";
 @import "_gridmaindex";
+@import "_gridmainorigen";
 @import "_footer";
 
 /* SCSS APLICADO AL MAIN*/
@@ -8,6 +9,15 @@
     flex-direction: column;
     align-items: center;
 }
+
+.posiIframe{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.encabezadoOri{overflow: hidden;}
+
 .p-30{padding: 30px;}
 
 .borderH{border: solid;}
@@ -18,7 +28,10 @@
 
 h2{font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
+h4{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
 header, footer{margin-top: 40px;}
+
 .sizeImg {
     width: 151%;
     height: 480px;
@@ -69,25 +82,31 @@ header, footer{margin-top: 40px;}
 .fontColorCloud {
     color: lightblue;
 }
+
 .fontColorNVI {
     color: yellow;
 }
+
 .fontColorLiquid {
     color: blue;
 }
+
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-size: 30px;
 }
+
 h3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 main p {
     line-height: 30px;
     text-align: justify;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .bgImg {
     background-image: url(../assets/img/dust2.jpg);
     height: 450px;

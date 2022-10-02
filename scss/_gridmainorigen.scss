@@ -1,0 +1,18 @@
+/* GRID MAIN ORIGEN */
+.gridMainOrigen{
+    display: grid;
+    gap: 4px;
+    grid-template-areas: 
+    "iframe iframe encabezadoOri"
+    "secundarioOri izqOri derOri"
+    "secundarioOri inferiorOri inferiorOri";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto auto;
+}
+
+.iframeOri{grid-area: iframe;}
+.encabezadoOri{grid-area: encabezadoOri;}
+.secundarioOri{grid-area: secundarioOri;}
+.imgIzqOri{grid-area: izqOri;}
+.imgDerOri{grid-area: derOri;}
+.imgInferioOri{grid-area: inferiorOri;}

@@ -48,7 +48,7 @@ header {
 /* GRID MAIN INDEX */
 .gridMainIndex {
   display: grid;
-  gap: 8px;
+  gap: 4px;
   grid-template-areas: "encabezado encabezado encebezado" "primerTxt primerTxt aside" "segundoTxt segundoTxt aside";
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: auto auto auto; }
@@ -66,6 +66,32 @@ header {
   grid-area: aside; }
 
 /* FIN GRID MAIN INDEX */
+/* GRID MAIN ORIGEN */
+.gridMainOrigen {
+  display: grid;
+  gap: 4px;
+  grid-template-areas: "iframe iframe encabezadoOri" "secundarioOri izqOri derOri" "secundarioOri inferiorOri inferiorOri";
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: auto auto auto; }
+
+.iframeOri {
+  grid-area: iframe; }
+
+.encabezadoOri {
+  grid-area: encabezadoOri; }
+
+.secundarioOri {
+  grid-area: secundarioOri; }
+
+.imgIzqOri {
+  grid-area: izqOri; }
+
+.imgDerOri {
+  grid-area: derOri; }
+
+.imgInferioOri {
+  grid-area: inferiorOri; }
+
 /* SCSS APLICADO AL FOOTER */
 footer {
   background-image: linear-gradient(to bottom, #3c46aa, #7470c0, #a49ed5, #d1cdea, #ffffff);
@@ -106,6 +132,14 @@ footer {
   flex-direction: column;
   align-items: center; }
 
+.posiIframe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.encabezadoOri {
+  overflow: hidden; }
+
 .p-30 {
   padding: 30px; }
 
@@ -117,6 +151,9 @@ footer {
   left: 75px; }
 
 h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+h4 {
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 header, footer {
