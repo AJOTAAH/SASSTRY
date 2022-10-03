@@ -1,0 +1,52 @@
+.gridMainMatches{
+    display: grid;
+    grid-template-areas:
+    "tituloMatch tituloMatch tituloMatch"
+    "primerJuego primerJuego ads"
+    "segundoJuego segundoJuego ads"
+    "tercerJuego tercerJuego ads";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto auto auto;
+}
+
+.firstGame{grid-area: primerJuego;}
+.secGame{grid-area: segundoJuego;}
+.thirdGame{grid-area: tercerJuego;}
+.encabezadoMatches{grid-area: tituloMatch;}
+
+.encabezadoMatches{
+    border: solid 3px;
+    margin-bottom: 15px;
+}
+.firstGame{
+    border: solid 2px;
+    margin-bottom: 15px;
+}
+.secGame{@extend.firstGame}
+.thirdGame{@extend.firstGame}
+
+.sizeTable {
+    padding: 50px;
+    margin: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: solid;
+}
+
+.bgMatch1 {
+    background-image: url(../assets/img/inferno.jpg);
+    height: 210px;
+}
+
+.bgMatch2 {
+    background-image: url(../assets/img/vertigo.jpg);
+    height: 210px;
+}
+
+.bgMatch3 {
+    background-image: url(../assets/img/mirage.jpg);
+    height: 210px;
+}
+
+.fontColorCloud {color: lightblue;}
+.fontColorNVI {color: yellow;}
+.fontColorLiquid {color: blue;}

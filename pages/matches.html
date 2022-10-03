@@ -10,152 +10,146 @@
 </head>
 
 <body>
-	<!-- Contenedores semanticos: header, nav, section, article, main, footer, etc -->
-	<!-- contenedores genericos: div (bloque); span (en linea)-->
-	<!-- header (logo + nav)-->
-	<header>
-		<!-- logo -->
-		<div>
-			<a href="../index.html">
-				<img src="../assets/img/logo.png" alt="logo pagina" class="sizeLogo">
-			</a>
-		</div>
+	<div class="gridContainer">
+		<!-- Contenedores semanticos: header, nav, section, article, main, footer, etc -->
+		<!-- contenedores genericos: div (bloque); span (en linea)-->
+		<!-- header (logo + nav)-->
+		<header>
+			<!-- logo -->
+			<div>
+				<a href="../index.html">
+					<img src="../assets/img/logo.png" alt="logo pagina" class="sizeLogo">
+				</a>
+			</div>
 
-		<!-- nav -->
-		<nav >
-			<!-- listas no ordenadas -->
-			<ul class="flexAni">
-				<!-- cada elemento de la lista va a estar contenido en un 'li'-->
-				<div class="animacionLi">
-					<li class="editLiHeader">
-						<a href="../index.html">HOME</a>
-					</li>
-				</div>
-				<div class="animacionLi">
-					<li class="editLiHeader">
-						<a href="origen.html">ORIGEN</a>
-					</li>
-				</div>
-				<div class="animacionLi">
-					<li class="editLiHeader">
-						<a href="#">MATCHES</a>
-					</li>
-				</div>
-				<div class="animacionLi">
-					<li class="editLiHeader">
-						<a href="equipo.html">EQUIPO</a>
-					</li>
-				</div>
-				<div class="animacionLi">
-					<li class="editLiHeader">
-						<a href="noticias.html">NOTICIAS</a>
-					</li>
-				</div>
-			</ul>
-		</nav>
-
-	</header>
-	<!-- cierre header -->
-	<!-- apertura contenido -->
-	<main>
-		<hr>
-		<div>
-			<h1 data-aos="fade-right">NEXT MATCHES..</h1>
-		</div>
-		<hr>
-		<!-- tabla -->
-		<section class="bgMatch1">
-			<table border="1" style="border-collapse:separate ;" cellspacing="12" class="sizeTable bgColor" <!-- fila
-				encabezado -->
-				<tr>
-					<th>Wall-On</th>
-					<th>vs</th>
-					<th class="fontColorCloud">Cloud9</th>
-				</tr>
-				<!--fila 2 -->
-				<td>9:30PM</td>
-			</table>
-		</section>
-		<hr>
-		<br>
-		<section class="bgMatch2">
-			<table border="1" cellspacing="12" style="border-collapse:separate ;" class="sizeTable bgColor">
-				<tr>
-					<th>Wall-On</th>
-					<th>vs</th>
-					<th class="fontColorNVI">NAVI</th>
-				</tr>
-				<!--fila 3 -->
-				<td>3:00PM</td>
-			</table>
-		</section>
-		<hr>
-		<br>
-		<section class="bgMatch3">
-			<table border="1" cellspacing="12" style="border-collapse:separate ;" class="sizeTable bgColor">
-				<tr>
-					<th>Wall-On</th>
-					<th>vs</th>
-					<th class="fontColorLiquid">LIQUID</th>
-				</tr>
-				<!--fila 4 -->
-				<td>7:30AM</td>
-			</table>
-		</section>
-
-	</main>
-	<!-- cierre contenido -->
-	<!-- apertura footer -->
-	<hr>
-	<footer class="footerGrid">
-		<div>
+			<!-- nav -->
 			<nav>
-				<ul>
+				<!-- listas no ordenadas -->
+				<ul class="flexAni">
+					<!-- cada elemento de la lista va a estar contenido en un 'li'-->
 					<div class="animacionLi">
-						<li class="editLiFooter">
+						<li class="editLiHeader">
 							<a href="../index.html">HOME</a>
 						</li>
 					</div>
 					<div class="animacionLi">
-						<li class="editLiFooter">
-							<a href="./origen.html">ORIGEN</a>
+						<li class="editLiHeader">
+							<a href="origen.html">ORIGEN</a>
 						</li>
 					</div>
 					<div class="animacionLi">
-						<li class="editLiFooter">
+						<li class="editLiHeader">
 							<a href="#">MATCHES</a>
 						</li>
 					</div>
 					<div class="animacionLi">
-						<li class="editLiFooter">
-							<a href="./equipo.html">EQUIPO</a>
+						<li class="editLiHeader">
+							<a href="equipo.html">EQUIPO</a>
 						</li>
 					</div>
 					<div class="animacionLi">
-						<li class="editLiFooter">
-							<a href="./noticias.html">NOTICIAS</a>
+						<li class="editLiHeader">
+							<a href="noticias.html">NOTICIAS</a>
 						</li>
 					</div>
 				</ul>
 			</nav>
-		</div>
-		<div>
-			<p>RRSS</p>
-			<div class="flexRedes">
-				<img src="../assets/img/twitter.png" alt="twitter" class="sizeRRSS">
-				<a href="http://www.instagram.com/ajotaah/" target="_blank">
-					<img src="../assets/img/ig.png" alt="instagram" class="sizeRRSS">
-				</a>
-				<a href="https://www.tiktok.com/@ajotaah?lang=es" target="_blank">
-					<img src="../assets/img/tiktok.png" alt="tiktok" class="sizeTiktok">
-				</a>
+
+		</header>
+		<!-- cierre header -->
+		<!-- apertura contenido -->
+		<main class="gridMainMatches">
+			<div class="encabezadoMatches">
+				<h1 data-aos="zoom-in">NEXT MATCHES..</h1>
 			</div>
-		</div>
-		<div>
-			<p>PARTNERS</p>
-		</div>
-	</footer>
-	<!-- cierre footer -->
+			<!-- tabla -->
+			<section class="bgMatch1 firstGame">
+				<table class="sizeTable bgColor">
+					<tr>
+						<th>Wall-On</th>
+						<th>vs</th>
+						<th class="fontColorCloud">Cloud9</th>
+					</tr>
+					<!--fila 2 -->
+					<td>9:30PM</td>
+				</table>
+			</section>
+			<section class="bgMatch2 secGame">
+				<table class="sizeTable bgColor">
+					<tr>
+						<th>Wall-On</th>
+						<th>vs</th>
+						<th class="fontColorNVI">NAVI</th>
+					</tr>
+					<!--fila 3 -->
+					<td>3:00PM</td>
+				</table>
+			</section>
+			<section class="bgMatch3 thirdGame">
+				<table class="sizeTable bgColor">
+					<tr>
+						<th>Wall-On</th>
+						<th>vs</th>
+						<th class="fontColorLiquid">LIQUID</th>
+					</tr>
+					<!--fila 4 -->
+					<td>7:30AM</td>
+				</table>
+			</section>
+		</main>
+		<!-- cierre contenido -->
+		<!-- apertura footer -->
+		<hr>
+		<footer class="footerGrid">
+			<div>
+				<nav>
+					<ul>
+						<div class="animacionLi">
+							<li class="editLiFooter">
+								<a href="../index.html">HOME</a>
+							</li>
+						</div>
+						<div class="animacionLi">
+							<li class="editLiFooter">
+								<a href="./origen.html">ORIGEN</a>
+							</li>
+						</div>
+						<div class="animacionLi">
+							<li class="editLiFooter">
+								<a href="#">MATCHES</a>
+							</li>
+						</div>
+						<div class="animacionLi">
+							<li class="editLiFooter">
+								<a href="./equipo.html">EQUIPO</a>
+							</li>
+						</div>
+						<div class="animacionLi">
+							<li class="editLiFooter">
+								<a href="./noticias.html">NOTICIAS</a>
+							</li>
+						</div>
+					</ul>
+				</nav>
+			</div>
+			<div>
+				<p>RRSS</p>
+				<div class="flexRedes">
+					<img src="../assets/img/twitter.png" alt="twitter" class="sizeRRSS">
+					<a href="http://www.instagram.com/ajotaah/" target="_blank">
+						<img src="../assets/img/ig.png" alt="instagram" class="sizeRRSS">
+					</a>
+					<a href="https://www.tiktok.com/@ajotaah?lang=es" target="_blank">
+						<img src="../assets/img/tiktok.png" alt="tiktok" class="sizeTiktok">
+					</a>
+				</div>
+			</div>
+			<div>
+				<p>PARTNERS</p>
+			</div>
+		</footer>
+		<!-- cierre footer -->
+	</div>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>
 		AOS.init();

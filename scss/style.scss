@@ -2,6 +2,7 @@
 @import "_header";
 @import "_gridmaindex";
 @import "_gridmainorigen";
+@import "_gridmainmatches";
 @import "_footer";
 
 /* SCSS APLICADO AL MAIN*/
@@ -48,47 +49,9 @@ header, footer{margin-top: 40px;}
     flex-direction: column;
 }
 
-.colorTitulo {
-    color: black;
-}
-
-.sizeTable {
-    padding: 20px;
-    margin: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: solid;
-}
-
-.bgMatch1 {
-    background-image: url(../assets/img/inferno.jpg);
-    height: 210px;
-}
-
-.bgMatch2 {
-    background-image: url(../assets/img/vertigo.jpg);
-    height: 210px;
-}
-
-.bgMatch3 {
-    background-image: url(../assets/img/mirage.jpg);
-    height: 210px;
-}
-
 
 .bgColor {
     background-color: white;
-}
-
-.fontColorCloud {
-    color: lightblue;
-}
-
-.fontColorNVI {
-    color: yellow;
-}
-
-.fontColorLiquid {
-    color: blue;
 }
 
 h1 {
