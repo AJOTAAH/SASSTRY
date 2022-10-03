@@ -1,7 +1,7 @@
 /* GRID MAIN ORIGEN */
 .gridMainOrigen{
     display: grid;
-    gap: 4px;
+    gap: 8px;
     grid-template-areas: 
     "iframe iframe encabezadoOri"
     "secundarioOri izqOri derOri"
@@ -16,3 +16,41 @@
 .imgIzqOri{grid-area: izqOri;}
 .imgDerOri{grid-area: derOri;}
 .imgInferioOri{grid-area: inferiorOri;}
+
+.sizeInferiorOri{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 880px;
+    height: 250px;
+}
+
+.sizeDerOri{
+    width: 100%;
+}
+.sizeIzqOri{
+    height: 247px;
+    width: 430px;
+}
+.borderTxt{
+    padding: 10px;
+    margin: 5px;
+    border: 4px solid;
+    border-radius: 20px;
+}
+
+.encabezadoOri{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 90px;
+}
+
+.subLugar{
+    text-align: center;
+}
+
+.secundarioOri{
+    display: flex;
+    flex-direction: column;
+}
