@@ -19,3 +19,17 @@
     color: black;
     margin-bottom: 40px;
 }
+
+.quoteBorder{
+    border: solid;
+    border-radius: 20px;
+}
+
+.positionTxt{position: relative;
+    left: 75px;
+}
+
+.asideCenter{display: flex;
+    flex-direction: column;
+    align-items: center;
+}

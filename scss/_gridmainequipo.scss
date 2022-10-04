@@ -1,0 +1,31 @@
+.gridMainEquipo{
+    display: grid;
+    gap: 2px;
+    grid-template-areas: 
+    "tituloEquipo tituloEquipo tituloEquipo tituloEquipo tituloEquipo"
+    "playerUno playerDos playerTres playerCuatro playerCinco";
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: auto auto;
+}
+
+.encabezadoEquip{grid-area: tituloEquipo;}
+.playerUno{grid-area: playerUno;}
+.playerDos{grid-area: playerDos;}
+.playerTres{grid-area: playerTres;}
+.playerCuat{grid-area: playerCuatro;}
+.playerCinc{grid-area: playerCinco;}
+
+.encabezadoEquip{margin-bottom: 20px;}
+
+.imgEquipo{
+    width: 200px;
+    height: 180px;
+    margin-top: 10px;
+} 
+
+.jugadorFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid;
+}

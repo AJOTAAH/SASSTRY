@@ -70,6 +70,19 @@ header {
   color: black;
   margin-bottom: 40px; }
 
+.quoteBorder {
+  border: solid;
+  border-radius: 20px; }
+
+.positionTxt {
+  position: relative;
+  left: 75px; }
+
+.asideCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 /* GRID MAIN ORIGEN */
 .gridMainOrigen {
   display: grid;
@@ -103,6 +116,11 @@ header {
   width: 880px;
   height: 250px; }
 
+.posiIframe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
 .sizeDerOri {
   width: 100%; }
 
@@ -131,6 +149,7 @@ header {
 
 .gridMainMatches {
   display: grid;
+  gap: 10px;
   grid-template-areas: "tituloMatch tituloMatch tituloMatch" "primerJuego primerJuego ads" "segundoJuego segundoJuego ads" "tercerJuego tercerJuego ads";
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: auto auto auto auto; }
@@ -146,6 +165,16 @@ header {
 
 .encabezadoMatches {
   grid-area: tituloMatch; }
+
+.espacioAds {
+  grid-area: ads; }
+
+.espacioAds {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: solid;
+  border-radius: 20px; }
 
 .encabezadoMatches {
   border: solid 3px;
@@ -182,6 +211,45 @@ header {
 .fontColorLiquid {
   color: blue; }
 
+.gridMainEquipo {
+  display: grid;
+  gap: 2px;
+  grid-template-areas: "tituloEquipo tituloEquipo tituloEquipo tituloEquipo tituloEquipo" "playerUno playerDos playerTres playerCuatro playerCinco";
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: auto auto; }
+
+.encabezadoEquip {
+  grid-area: tituloEquipo; }
+
+.playerUno {
+  grid-area: playerUno; }
+
+.playerDos {
+  grid-area: playerDos; }
+
+.playerTres {
+  grid-area: playerTres; }
+
+.playerCuat {
+  grid-area: playerCuatro; }
+
+.playerCinc {
+  grid-area: playerCinco; }
+
+.encabezadoEquip {
+  margin-bottom: 20px; }
+
+.imgEquipo {
+  width: 200px;
+  height: 180px;
+  margin-top: 10px; }
+
+.jugadorFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid; }
+
 /* SCSS APLICADO AL FOOTER */
 footer {
   background-image: linear-gradient(to bottom, #3c46aa, #7470c0, #a49ed5, #d1cdea, #ffffff);
@@ -217,16 +285,6 @@ footer {
       font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 /* SCSS APLICADO AL MAIN*/
-.asideCenter {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.posiIframe {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
 .encabezadoOri {
   overflow: hidden; }
 
@@ -235,10 +293,6 @@ footer {
 
 .borderH {
   border: solid; }
-
-.positionTxt {
-  position: relative;
-  left: 75px; }
 
 h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
@@ -252,15 +306,6 @@ header, footer {
 .sizeImg {
   width: 151%;
   height: 480px; }
-
-.flexEquipo {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly; }
-
-.flexStats {
-  display: flex;
-  flex-direction: column; }
 
 .bgColor {
   background-color: white; }

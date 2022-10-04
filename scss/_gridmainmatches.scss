@@ -1,5 +1,6 @@
 .gridMainMatches{
     display: grid;
+    gap: 10px;
     grid-template-areas:
     "tituloMatch tituloMatch tituloMatch"
     "primerJuego primerJuego ads"
@@ -13,6 +14,15 @@
 .secGame{grid-area: segundoJuego;}
 .thirdGame{grid-area: tercerJuego;}
 .encabezadoMatches{grid-area: tituloMatch;}
+.espacioAds{grid-area: ads;}
+
+.espacioAds{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: solid;
+    border-radius: 20px;
+}
 
 .encabezadoMatches{
     border: solid 3px;
