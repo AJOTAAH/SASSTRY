@@ -4,6 +4,7 @@
 @import "_gridmainorigen";
 @import "_gridmainmatches";
 @import "_gridmainequipo";
+@import "_gridmainnoticias";
 @import "_footer";
 
 /* SCSS APLICADO AL MAIN*/
@@ -13,9 +14,7 @@
 
 .borderH{border: solid;}
 
-h2{font-family: Verdana, Geneva, Tahoma, sans-serif;}
-
-h4{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+h1,h2,h3,h4{font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
 header, footer{margin-top: 40px;}
 
@@ -28,14 +27,10 @@ header, footer{margin-top: 40px;}
     background-color: white;
 }
 
-h1 {
+.tituloCenter{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-size: 30px;
-}
-
-h3 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main p {
