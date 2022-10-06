@@ -1,32 +1,55 @@
+/* APARTDO SCSS DE NOTICIAS */
 .gridMainNoticias{
     display: grid;
+    gap: 5px;
     grid-template-areas: 
     "tituloNoticia publi"
     "subtiNoticia publi";
     grid-template-columns: 70% 30%;
     grid-template-rows: auto auto;
 }
-
+.adsNoticias{grid-area: publi;
+    border: solid;
+    border-radius: 30px;
+}
 .encabezadoNoticia{grid-area: tituloNoticia;
     margin-bottom: 20px;
 }
-
 .subtiNoticia{grid-area: subtiNoticia;
-    margin-bottom: 110px;
+    margin-bottom: 20px;
 }
+.divisorNoti{
+    border: solid 2px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 66px;
+    margin-bottom: -50px;
+}
+/* FIN DEL APARTDO SCSS DE NOTICIAS */
 
+/* APARTADO SCSS DEL FORMULARIO */
 .gridFormulario{
     display: grid;
+    margin-top: 70px;
     grid-template-areas: 
     "encuesta img";
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto;
 }
 
+.rellenoNoticias{grid-area: img;
+    width: 600px;
+    height: 600px;
+    margin: 35px;
+}
 .formularioNoticia{grid-area: encuesta;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 30px;
+    margin-top: 100px;
 }
+/* FIN DEL APARTADO SCSS DEL FORMULARIO */
+
+
 
