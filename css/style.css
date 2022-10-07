@@ -70,6 +70,12 @@ header {
   color: black;
   margin-bottom: 40px; }
 
+.p-30 {
+  padding: 30px; }
+
+.borderH {
+  border: solid; }
+
 .quoteBorder {
   border: solid;
   border-radius: 20px; }
@@ -341,16 +347,7 @@ footer {
       font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 /* SCSS APLICADO AL MAIN*/
-.encabezadoOri {
-  overflow: hidden; }
-
-.p-30 {
-  padding: 30px; }
-
-.borderH {
-  border: solid; }
-
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 header, footer {
