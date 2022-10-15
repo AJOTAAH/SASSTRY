@@ -94,6 +94,15 @@ header {
   flex-direction: column;
   align-items: center; }
 
+/* @MEDIA MAIN INDEX */
+@media (min-width: 320px) and (max-width: 768px) {
+  .gridMainIndex {
+    display: flex;
+    flex-direction: column; }
+    .gridMainIndex .sizeImg {
+      width: 300px;
+      height: 300px; } }
+
 /* GRID MAIN ORIGEN */
 .gridMainOrigen {
   display: grid;
@@ -148,8 +157,8 @@ header {
 .encabezadoOri {
   display: flex;
   flex-direction: column;
-  position: relative;
-  right: 90px; }
+  /*     position: relative;
+    right: 90px; */ }
 
 .subLugar {
   text-align: center; }
@@ -157,6 +166,28 @@ header {
 .secundarioOri {
   display: flex;
   flex-direction: column; }
+
+/* @MEDIA ORIGEN MAIN */
+@media (min-width: 320px) and (max-width: 768px) {
+  .gridMainOrigen {
+    display: flex;
+    flex-direction: column; }
+    .gridMainOrigen .encabezadoOri {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .gridMainOrigen .sizeInferiorOri {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 300px;
+      height: 200px; }
+    .gridMainOrigen .sizeDerOri {
+      width: 300px;
+      height: 250px; }
+    .gridMainOrigen .sizeIzqOri {
+      height: 300px;
+      width: 250px; } }
 
 .gridMainMatches {
   display: grid;
@@ -225,6 +256,15 @@ header {
 .fontColorLiquid {
   color: blue; }
 
+/* @MEDIA MAING MATCHES */
+@media (min-width: 320px) and (max-width: 768px) {
+  .gridMainMatches {
+    display: flex;
+    flex-direction: column; }
+    .gridMainMatches .sizeTable {
+      padding: 53px;
+      margin: 14px; } }
+
 .gridMainEquipo {
   display: grid;
   gap: 2px;
@@ -264,6 +304,12 @@ header {
   flex-direction: column;
   align-items: center;
   border: solid; }
+
+/* @MEDIA MAIN EQUIPO */
+@media (min-width: 320px) and (max-width: 768px) {
+  .gridMainEquipo {
+    display: flex;
+    flex-direction: column; } }
 
 /* APARTDO SCSS DE NOTICIAS */
 .gridMainNoticias {
@@ -317,6 +363,18 @@ header {
   margin-top: 100px; }
 
 /* FIN DEL APARTADO SCSS DEL FORMULARIO */
+/* @MEDIA MAIN NOTCIAS */
+@media (min-width: 320px) and (max-width: 768px) {
+  .gridMainNoticias {
+    display: flex;
+    flex-direction: column; }
+  .gridFormulario {
+    display: flex;
+    flex-direction: column; }
+    .gridFormulario .rellenoNoticias {
+      width: 250px;
+      height: 250px; } }
+
 /* SCSS APLICADO AL FOOTER */
 footer {
   background-image: linear-gradient(to bottom, #3c46aa, #7470c0, #a49ed5, #d1cdea, #ffffff);

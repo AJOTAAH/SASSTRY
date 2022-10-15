@@ -48,8 +48,8 @@
 .encabezadoOri{
     display: flex;
     flex-direction: column;
-    position: relative;
-    right: 90px;
+/*     position: relative;
+    right: 90px; */
 }
 
 .subLugar{
@@ -59,4 +59,32 @@
 .secundarioOri{
     display: flex;
     flex-direction: column;
+}
+
+/* @MEDIA ORIGEN MAIN */
+@media (min-width: 320px) and (max-width: 768px) {
+    .gridMainOrigen{
+        display: flex;
+        flex-direction: column;
+        .encabezadoOri{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .sizeInferiorOri{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 300px;
+            height: 200px;
+        }
+        .sizeDerOri{
+            width: 300px;
+            height: 250px;
+        }
+        .sizeIzqOri{
+            height: 300px;
+            width: 250px;
+        }
+    }
 }

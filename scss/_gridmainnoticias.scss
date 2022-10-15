@@ -50,6 +50,20 @@
     margin-top: 100px;
 }
 /* FIN DEL APARTADO SCSS DEL FORMULARIO */
-
+/* @MEDIA MAIN NOTCIAS */
+@media (min-width: 320px) and (max-width: 768px) {
+    .gridMainNoticias{
+        display: flex;
+        flex-direction: column;
+    }
+    .gridFormulario{
+        display: flex;
+        flex-direction: column;
+        .rellenoNoticias{
+            width: 250px;
+            height: 250px;
+        }
+    }
+}
 
 

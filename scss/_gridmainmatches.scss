@@ -59,3 +59,15 @@
 .fontColorCloud {color: lightblue;}
 .fontColorNVI {color: yellow;}
 .fontColorLiquid {color: blue;}
+
+/* @MEDIA MAING MATCHES */
+@media (min-width: 320px) and (max-width: 768px) {
+    .gridMainMatches{
+        display: flex;
+        flex-direction: column;
+        .sizeTable{
+            padding: 53px;
+            margin: 14px;
+        }
+    }
+}

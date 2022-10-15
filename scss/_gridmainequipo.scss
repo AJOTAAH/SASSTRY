@@ -31,3 +31,12 @@
     align-items: center;
     border: solid;
 }
+
+/* @MEDIA MAIN EQUIPO */
+@media (min-width: 320px) and (max-width: 768px) {
+    .gridMainEquipo{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
