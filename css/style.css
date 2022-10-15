@@ -16,6 +16,11 @@ footer {
   grid-area: footer; }
 
 /* FIN GRID PRINCIPAL */
+@media (min-width: 320px) and (max-width: 768px) {
+  .flexAni {
+    flex-wrap: wrap;
+    padding: 5px; } }
+
 /* SCSS APLICADO AL HEADER */
 header {
   background-image: linear-gradient(to bottom, #ffffff, #d1cdea, #a49ed5, #7470c0, #3c46aa);

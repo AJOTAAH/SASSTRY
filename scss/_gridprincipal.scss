@@ -13,3 +13,10 @@ header{grid-area: header;}
 main{grid-area: main;}
 footer{grid-area: footer;}
 /* FIN GRID PRINCIPAL */
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .flexAni{
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+}
